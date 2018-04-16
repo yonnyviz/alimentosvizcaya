@@ -1,28 +1,23 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand" href="#home"><img src="/assets/logo.png" alt=""></a>
+          <a class="navbar-brand" href="#home"><img src="assets/logo.png" alt=""></a>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
+              <li class="hidden">
+                  <a href="#home"></a>
+              </li>
               <li class="page-scroll" *ngFor="let Link of Links">
                   <a href="{{Link.src}}">{{Link.name}}</a>
               </li>
           </ul>
       </div>
-      <!-- /.navbar-collapse -->
-
   </div>
-  <!-- /.container-fluid -->
 </nav>
-
 <header>
   <div class="container">
     <div class="row">
@@ -30,16 +25,13 @@
     </div>
   </div>
 </header>
-
 <section id="productos">
   <div class="container">
-
       <div class="row">
           <div class="col-lg-12 text-center" style="margin-bottom: 50px;">
               <h2>Productos</h2>
           </div>
       </div>
-
       <div class="row">
           <div class="col-md-6 portfolio-item">
               <div class="image col-sm-6">
@@ -62,10 +54,8 @@
               </div>
           </div>
       </div>
-
   </div>
 </section>
-
 <section class="success" id="sobre-nosotros">
   <div class="container">
       <div class="row">
@@ -80,7 +70,6 @@
       </div>
   </div>
 </section>
-
 <section id="recetas">
   <div class="container">
       <div class="row">
@@ -111,7 +100,6 @@
       </div>
   </div>
 </section>
-
 <footer class="text-center">
     <div class="footer-above">
         <div class="container">
@@ -134,8 +122,6 @@
         </div>
     </div>
 </footer>
-
-<!-- Recipe Modals -->
 <div class="portfolio-modal modal fade" id="recipeModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
